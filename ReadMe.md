@@ -1,4 +1,4 @@
-# Grind
+# LeetCode Grind
 A repository for practicing LeetCode problems and improving your coding skills.
 
 ## Introduction
