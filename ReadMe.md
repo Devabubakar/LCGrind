@@ -13,8 +13,5 @@ Each problem in Grind is stored in its own directory, along with a description o
 ## Contributions
 If you'd like to contribute to Grind, simply submit a pull request with your solution to any of the problems in the repository. Your contributions are greatly appreciated, and will help make Grind a valuable resource for other coders.
 
-## Acknowledgements
-Grind would not be possible without the amazing support and contributions of the open-source community. Thank you for all that you do to make this project a reality.
-
 ## License
 This repository is licensed under the MIT license. See the [LICENSE](LICENSE) file for more information.
