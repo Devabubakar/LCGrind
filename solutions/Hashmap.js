@@ -28,7 +28,7 @@ class HashMap {
         for(let i = 0; i < key.length; i++) { 
              hash = 13 * hash + key.charCodeAt(i) % tableSize
         }
-        return hash % tableSize
+        return hash 
     }
     set(key, value) {
         this.nums++
