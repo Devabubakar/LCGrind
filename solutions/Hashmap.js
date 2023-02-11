@@ -31,6 +31,7 @@ class HashMap {
         for(let i = 0; i < key.length; i++) { 
              hash = (13 * hash + key.charCodeAt(i)) % tableSize;
         }
+        console.log(hash)
         return hash;
     }
 
@@ -54,12 +55,14 @@ class HashMap {
 
     // function to get the value of a key from the hashmap
     get(key) {
-        const index = this._hash(key,this.arr.length); // hash the key to get its index in the array
+        const index = this._hash(key,this.arr.length); 
+        
+        // hash the key to get its index in the array
         // if the index is empty, return null
         if( this.arr[index] === undefined) {
             return null;
         }
-        // return the value of the key by finding it in the bucket
+        
         return this.arr[index].find(x => x[0] === key)[1];
     }
 }
@@ -67,7 +70,7 @@ class HashMap {
 const map = new HashMap();
 
 
-map.set("firstName", "value1")
+
 map.set("care", "value2")
 map.set("race", "value3")
 
@@ -75,3 +78,5 @@ console.log(map.arr.length)
 console.log(map.get("firstName"))
 console.log(map.get("care")) // returns value2 as expected
 console.log(map.get("race")) // returns value3 as expected
+
+
