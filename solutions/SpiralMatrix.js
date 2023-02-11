@@ -12,7 +12,7 @@ var spiralMatrix = function (matrix) {
   let size = matrix.length * matrix[0].length;
   let result = [];
   while (result.length < size) {
-    for (let i = left; i <= right && result.length < size; i++) {
+    for (let i = left; i <= right; i++) {
       result.push(matrix[top][i]);
     }
     top++;
