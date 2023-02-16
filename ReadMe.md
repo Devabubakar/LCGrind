@@ -155,6 +155,11 @@ If you'd like to contribute to Grind, simply submit a pull request with your sol
 
 - [Low Level Design Primer](https://github.com/prasadgujar/low-level-design-primer/blob/master/solutions.md)
 
+- [Tech Interview Handbook](https://www.techinterviewhandbook.org/software-engineering-interview-guide/)
+
+- [Leetcode Company Frequency](https://github.com/xizhengszhang/Leetcode_company_frequency)
+
+
 
 
 
