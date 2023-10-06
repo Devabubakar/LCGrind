@@ -25,3 +25,34 @@ var lengthOfLongestSubstring = function (s) {
   }
   return result;
 };
+
+//using the bruteforce method
+function lengthOfLongestSubstringTwo(s) {
+  //get length
+  let n = s.length;
+  //store the results length
+  let result = 0;
+  //loop through string values
+  for (let i = 0; i < n; i++) {
+    //DSA store unique values
+    let charSet = new Set();
+    let currLength = 0;
+    for (let j = i; j < n; j++) {
+      //check value if does not exist in charSet , and if not break
+      if (!charSet.has(s[j])) {
+        // increment the currentLength
+        charSet.add(s[j]);
+        currLength++;
+        //return either result or current length the value which is greater
+        result = Math.max(result, currLength);
+      } else {
+        //break
+        break;
+      }
+    }
+  }
+  return result;
+}
+console.log(lengthOfLongestSubstringTwo("pwwkew"));
+console.log(lengthOfLongestSubstringTwo("abcabcbb"));
+console.log(lengthOfLongestSubstringTwo("bbbb"));
